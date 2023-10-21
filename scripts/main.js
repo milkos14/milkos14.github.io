@@ -6,6 +6,16 @@ $(document).ready(function() {
     // uncomment below for on-scroll animations to played only once
     // once: true  
   }); // initialize animate on scroll library
+
+  function GetMyAge (){//Get my Age dynamically depending on Todays date onLoad
+    const d = new Date();
+    let year = d.getFullYear();
+    let birthYear = 1996;
+    document.getElementById("An_MyAge").innerHTML = year - birthYear;
+
+  }
+
+  GetMyAge();
 });
 
 // Smooth scroll for links with hashes
